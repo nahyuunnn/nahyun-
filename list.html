@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clear{
+            clear: both;
+        }
+        header{
+            width: 1140px;
+            height: 100px;
+            margin: 0 auto;
+            /* border: solid 1px red; */
+        }
+        footer{
+            width: 100%;
+            height: 150px;
+            margin-top: 30px;
+            background-color: #090044;
+            /* border: solid 1px red; */
+        }
+        #footer_box{
+            width: 1140px;
+            height: 150px;
+           
+            margin: 0 auto;
+            /* border: solid 1px red; */
+        }
+        #footer_logo{
+            float: left;
+            margin: 50px 0 0 30px;
+            /* border: solid 1px red; */
+            
+        }
+        #address{
+            float: right;
+            margin: 50px 30px 0 0;
+            color: white;
+            /* border: solid 1px red; */
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        #logo{
+            float: left;
+            margin: 20px 0 0 20px;
+            /* border: solid 1px red; */
+        }
+        #menus{
+            float: right;
+            /* border: solid 1px red; */
+        }
+        #main_menu{
+            margin-top: 40px;
+            font-family: 'Pretendard-Bold';
+            font-size: 18px;
+            color: black;
+            /* border: solid 1px rgb(64, 0, 255); */
+        }
+        #main_menu li{
+            display: inline;
+            margin-left: 80px;
+        }
+        a:link {
+            color : black(0, 0, 0);
+            text-decoration: none;
+        }
+        a:visited {
+            color : black;
+            text-decoration: none;
+        }
+        a:hover {
+            color : blue
+        }
+        @font-face {
+        font-family: 'Pretendard-Bold';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        }
+        @font-face {
+         font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        }
+        #wrap{
+            width: 1140px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: red;
+            padding: 100px;
+        }
+        img{
+            display: block;
+        }
+        
+        .image{
+            display: inline-block;
+            margin-right: 70px;
+        }
+        .image:last-child{
+            margin-right: 0px;
+        }
+        .imageBox{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" width="100px"></a>
+        </div>
+        <nav id="menus">
+            
+            <ul id="main_menu">
+                <a href="movie.html"><li>영화</li></a>
+                <a href="music.html"><li>노래</li></a>
+                <a href="book.html"><li>책</li></a>
+                <a href="camera.html"><li>취미</li></a>
+                <a href="list.html"><li>버킷리스트</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrap">
+        <div class="imageBox">
+            <div class="image"><img src="sea.png" alt=""></div>
+            <div class="image"><img src="ohrora.png" alt=""></div>
+            <div class="image"><img src="tour.png" alt=""></div>
+        </div>
+        <div class="imageBox">
+            <div class="image"><img src="sky.png" alt=""></div>
+            <div class="image"><img src="concert.png" alt=""></div>
+            <div class="image"><img src="english.png" alt=""></div>
+        </div>
+    </div>
+   
+    <div class="clear"></div>
+    <footer>
+        <div id="footer_box">
+            <div id="footer_logo">
+                <img src="footerlogo.png" width="80px">
+            </div>
+            <ul id="address">
+                <li>경기도 의왕시 계원대학로 66</li>
+                <li>Tell : 1899-5823 E-mail : kaywon@kaywon.ac.kr</li>
+                <li></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
